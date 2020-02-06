@@ -21,16 +21,27 @@
         <option name="mavenHome" value="c:/apache-maven-3.6.2" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1V1EwGa3sAiKf9KeqOe3wZ782yM" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/../JavaTasks/src/main/java/aircompany/planes" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/test/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -44,33 +55,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner (1)">
-    <configuration name="MatrixSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="fundament.optionTask.MatrixSort" />
-      <module name="Bekish" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="fundament.optionTask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PoemSortLinesByLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collectionsOptionalTask.PoemSortLinesByLength" />
-      <module name="Bekish" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collectionsOptionalTask.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.AirportTest">
     <configuration name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="aircompany.Runner" />
       <module name="Bekish" />
@@ -84,39 +69,84 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.Runner" />
+    <configuration name="AirportTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Bekish" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collections.*" />
+          <option name="PATTERN" value="test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.AirportTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Student" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="classes.Student" />
+    <configuration name="AirportTest.testExperimentalPlanesHasClassificationLevelHigherThanUnclassified" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Bekish" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="classes.*" />
+          <option name="PATTERN" value="test.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test.java.AirportTest" />
+      <option name="METHOD_NAME" value="testExperimentalPlanesHasClassificationLevelHigherThanUnclassified" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirportTest.testHasAtLeastOneBomberInMilitaryPlanes" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Bekish" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test.java.AirportTest" />
+      <option name="METHOD_NAME" value="testHasAtLeastOneBomberInMilitaryPlanes" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AirportTest.testSortedByMaxLoadCapacity" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Bekish" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="test.java.AirportTest" />
+      <option name="METHOD_NAME" value="testSortedByMaxLoadCapacity" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.AirportTest" />
+        <item itemvalue="TestNG.AirportTest.testExperimentalPlanesHasClassificationLevelHigherThanUnclassified" />
+        <item itemvalue="TestNG.AirportTest.testHasAtLeastOneBomberInMilitaryPlanes" />
+        <item itemvalue="TestNG.AirportTest.testSortedByMaxLoadCapacity" />
         <item itemvalue="Application.Runner (1)" />
-        <item itemvalue="Application.Student" />
-        <item itemvalue="Application.Runner" />
-        <item itemvalue="Application.PoemSortLinesByLength" />
-        <item itemvalue="Application.MatrixSort" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +178,26 @@
       <workItem from="1579088958113" duration="529000" />
       <workItem from="1579090014403" duration="719000" />
       <workItem from="1579090829869" duration="2678000" />
-      <workItem from="1579188954612" duration="1521000" />
+      <workItem from="1579188954612" duration="1780000" />
+      <workItem from="1580380844963" duration="1353000" />
+      <workItem from="1580382227773" duration="19000" />
+      <workItem from="1580382899574" duration="88000" />
+      <workItem from="1580471558106" duration="127000" />
+      <workItem from="1580471877141" duration="9321000" />
+      <workItem from="1580642722458" duration="568000" />
+      <workItem from="1580643556723" duration="3143000" />
+      <workItem from="1580647128093" duration="376000" />
+      <workItem from="1580649579842" duration="974000" />
+      <workItem from="1580650621629" duration="2609000" />
+      <workItem from="1580831943039" duration="4287000" />
+      <workItem from="1580836596937" duration="1302000" />
+      <workItem from="1580886688909" duration="6498000" />
+      <workItem from="1580919989436" duration="1641000" />
+      <workItem from="1580975007804" duration="1017000" />
+      <workItem from="1580978217157" duration="396000" />
+      <workItem from="1580978660244" duration="772000" />
+      <workItem from="1580979735385" duration="285000" />
+      <workItem from="1580980955399" duration="980000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,6 @@
 package collections;
 
-public class Car {
+abstract public class Car {
     private String carModel;
     private int carFuelСonsumption;
     private int carCost;

@@ -61,6 +61,7 @@ public class Car {
         }
     }
 
+
     public Car(int id,String mark,String model,int year,String color,int price,int regNumber){
         this.id=id;
         this.mark=mark;
@@ -113,7 +114,8 @@ public class Car {
         this.regNumber=regNumber;
     }
     public String toString(){
-        return "Id:"+id+" Mark:"+mark+" Model:"+model+" Year:"+year+" Color:"+color+" Price:"+price+" Registration number:"+regNumber;
+        return "Id:"+id+" Mark:"+mark+" Model:"+model+" Year:"+year+" Color:"+color+" Price:"+price+" Registration number:"
+                +regNumber;
     }
 
         public void showMark(String x){
@@ -124,8 +126,8 @@ public class Car {
        }
        public void showModelYear(String y,int z,int xy){
                 if(getModel().equals(y) && (xy-getYear())>z){
-                    System.out.println("Id: "+getId()+"  Mark: "+getMark()+"  Model: "+getModel()+"  Year: "+getYear()+"  Color: "+
-                        getColor()+"  Price: "+getPrice()+"  Registration number: "+getRegNumber());
+                    System.out.println("Id: "+getId()+"  Mark: "+getMark()+"  Model: "+getModel()+"  Year: "+getYear()
+                            +"  Color: "+ getColor()+"  Price: "+getPrice()+"  Registration number: "+getRegNumber());
 
                 }
        }

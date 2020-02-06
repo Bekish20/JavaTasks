@@ -42,10 +42,8 @@ public class Runner {
                 .toString());
         System.out.println("Taxi car with max speed: " + passengerTaxiCar.getPassengerCarWithMaxSpeed().toString());
         System.out.println("Taxi bus with max speed: " + passengerBuses.getPassengerBusWithMaxSpeed().toString());
-        System.out.println("Taxipark  cost : " + (cost=passengerTaxiCar.getPassengerCarCost() + passengerBuses.getPassengerBusCost()));
-
-
-
+        System.out.println("Taxipark  cost : " + (cost=passengerTaxiCar.getPassengerCarCost()
+                + passengerBuses.getPassengerBusCost()));
     }
 }
 

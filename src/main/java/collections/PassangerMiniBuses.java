@@ -5,7 +5,8 @@ import collections.carType.PassengerMiniBusesType;
 public class PassangerMiniBuses extends Car {
     private PassengerMiniBusesType type;
 
-    public PassangerMiniBuses(String carModel, int carFuelСonsumption, int carCost, int carMaxSpeed, PassengerMiniBusesType type) {
+    public PassangerMiniBuses(String carModel, int carFuelСonsumption, int carCost, int carMaxSpeed
+            ,PassengerMiniBusesType type) {
         super(carModel, carFuelСonsumption, carCost, carMaxSpeed);
         this.type=type;
     }

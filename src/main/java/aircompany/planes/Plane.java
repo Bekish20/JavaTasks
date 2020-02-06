@@ -1,14 +1,13 @@
 package aircompany.planes;
-
 import java.util.Objects;
 
 abstract public class Plane {
-    String model;
+    public String model;
     private int maxSpeed;
     private int maxFlightDistance;
     private int maxLoadCapacity;
 
-    public Plane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity) {
+     public Plane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity) {
         this.model = model;
         this.maxSpeed = maxSpeed;
         this.maxFlightDistance = maxFlightDistance;
@@ -18,18 +17,14 @@ abstract public class Plane {
     public String getModel() {
         return model;
     }
-
-    public int getMS() {
+    public int getMaxSpeed() {
         return maxSpeed;
     }
-
-    public int Get_Max_Flight_Distance() {
+    public int getMaxFlightDistance() {
         return maxFlightDistance;
     }
-
-    public int getMinLoadCapacity() {
-        int result = this.maxLoadCapacity;
-        return result;
+    public int getMaxLoadCapacity() {
+        return maxLoadCapacity;
     }
 
     @Override
@@ -51,7 +46,7 @@ abstract public class Plane {
                 maxFlightDistance == plane.maxFlightDistance &&
                 maxLoadCapacity == plane.maxLoadCapacity &&
                 Objects.equals(model, plane.model);
-    }
+     }
 
     @Override
     public int hashCode() {

@@ -137,8 +137,8 @@ public class Student {
 
     public String toString() {
         return "Id:"+id+" Syrname:"+surname+" Name:"+name+" Middlename:"+middlename+" Date of birth:"+dateofBirth.getDate()+"."
-                +dateofBirth.getMonth()+"."+dateofBirth.getYear()+
-                " Address:"+address+" Phone:"+phone+" Facilty:"+faculty+ " Course:"+course+" Group:"+group;
+                +dateofBirth.getMonth()+"."+dateofBirth.getYear()
+                + " Address:"+address+" Phone:"+phone+" Facilty:"+faculty+ " Course:"+course+" Group:"+group;
     }
          public void showFac(String x) {
             if (getFaculty().equals(x)) {
@@ -152,12 +152,14 @@ public class Student {
              }
              public void showYear(int xy ) {
                 if (getDateodBirth().getYear()>xy){
-             System.out.println(getId() + ":" + getSurname() + " " + getName() + " " + getMiddlename()+" date of birth "+getDateodBirth().getYear());
+             System.out.println(getId() + ":" + getSurname() + " " + getName() + " " + getMiddlename()+" date of birth "
+                     +getDateodBirth().getYear());
                  }
                }
               public void showGroup(int xz) {
                   if (getGroup() == xz) {
-                      System.out.println(getId() + ":" + getSurname() + " " + getName() + " " + getMiddlename() + " Group " + getGroup());
+                      System.out.println(getId() + ":" + getSurname() + " " + getName() + " " + getMiddlename() + " Group "
+                              + getGroup());
                   }
               }
 
