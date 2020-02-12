@@ -6,8 +6,11 @@
 
 /src/main/java/exeptions
 
-/maven/target
+/maven/target/classes
 
+/maven/target/generated-sources
 
+/maven/target/maven-status
 
+/maven/target/test-classes
 
