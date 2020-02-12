@@ -1,16 +1,13 @@
-[Oo]bj
-[Bb]in
-*.user
-*.suo
-*.[Cc]ache
-*.bak
-*.ncb
-*.log 
+*.log
+*.iml
+*.class
 
-target/
-.classpath
-.project
-.settings
+/target 
 
-*.DS_Store
-[Tt]humbs.db
+/src/main/java/exeptions
+
+/maven/target
+
+
+
+
