@@ -6,9 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Bekish" />
+        <module name="JavaTasks" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="9" />
   </component>
 </project>
