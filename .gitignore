@@ -6,6 +6,8 @@
 
 /src/main/java/exeptions
 
+/src/main/java/io
+
 /maven/target/classes
 
 /maven/target/generated-sources
@@ -13,4 +15,8 @@
 /maven/target/maven-status
 
 /maven/target/test-classes
+
+/.idea
+
+
 
