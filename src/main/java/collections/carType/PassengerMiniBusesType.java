@@ -1,5 +1,5 @@
 package collections.carType;
 
-public enum  PassengerMiniBusesType {
+public enum PassengerMiniBusesType {
     ROUTETAXI, INTERNATIONAL, SPECIAL, TOURIST
 }

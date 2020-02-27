@@ -1,13 +1,13 @@
 package collectionsOptionalTask;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class PoemSortLinesByLength  {
-
-      public static void main(String[] args) {
-        List<String> Sonne= new ArrayList<String>();
+public class PoemSortLinesByLength {
+    public static void main(String[] args) {
+        List<String> Sonne = new ArrayList<String>();
         Sonne.add("Deutschland – mein Herz in Flammen");
         Sonne.add(" Will dich lieben und verdammen");
         Sonne.add(" Deutschland – dein Atem kalt");
@@ -23,8 +23,6 @@ public class PoemSortLinesByLength  {
                 return o1.length() - o2.length();
             }
         });
-
         System.out.println(Sonne);
     }
-
 }
