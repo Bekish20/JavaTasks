@@ -1,11 +1,12 @@
 package aircompany.planes;
+
 import java.util.Objects;
 
-public class PassengerPlane extends Plane{
-
+public class PassengerPlane extends Plane {
     private int passengersCapacity;
 
-    public PassengerPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, int passengersCapacity) {
+    public PassengerPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity,
+                          int passengersCapacity) {
         super(model, maxSpeed, maxFlightDistance, maxLoadCapacity);
         this.passengersCapacity = passengersCapacity;
     }
@@ -18,16 +19,16 @@ public class PassengerPlane extends Plane{
     public String toString() {
         return super.toString().replace("}",
                 ", passengersCapacity=" + passengersCapacity +
-                '}');
+                        '}');
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof PassengerPlane)) return false;
+        if (o == null || o.getClass() != this.getClass()) return false;
         if (!super.equals(o)) return false;
-        PassengerPlane plane = (PassengerPlane) o;
-        return passengersCapacity == plane.passengersCapacity;
+        PassengerPlane thatPlane = (PassengerPlane) o;
+        return passengersCapacity == thatPlane.passengersCapacity;
     }
 
     @Override

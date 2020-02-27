@@ -1,9 +1,10 @@
 package aircompany.planes;
+
 import aircompany.models.MilitaryType;
+
 import java.util.Objects;
 
-public class MilitaryPlane extends Plane{
-
+public class MilitaryPlane extends Plane {
     private MilitaryType type;
 
     public MilitaryPlane(String model, int maxSpeed, int maxFlightDistance, int maxLoadCapacity, MilitaryType type) {
@@ -18,17 +19,17 @@ public class MilitaryPlane extends Plane{
     @Override
     public String toString() {
         return super.toString().replace("}",
-                ", type=" + type +
-                '}');
+                ", military type=" + type +
+                        '}');
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof MilitaryPlane)) return false;
+        if (o == null || o.getClass() != this.getClass()) return false;
         if (!super.equals(o)) return false;
-        MilitaryPlane that = (MilitaryPlane) o;
-        return type == that.type;
+        MilitaryPlane thatPlane = (MilitaryPlane) o;
+        return Objects.equals(type, thatPlane.type);
     }
 
     @Override
