@@ -1,3 +1,4 @@
+package io;
 
 import java.io.*;
 
@@ -5,7 +6,7 @@ public class IoFundamentals {
     private static double dirNumbers;
     private static double fileNumbers;
     private static double fileNameLength;
-    
+
     public static void main(String[] args) throws IOException {
 
         FileOutputStream folder = new FileOutputStream("d:/study/test.txt", true);
