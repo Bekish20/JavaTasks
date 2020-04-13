@@ -3,6 +3,7 @@ package exeptions;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 public class University {
 
@@ -58,7 +59,7 @@ public class University {
 
         try {
             task.checkingMarks();
-        } catch (ArrayStoreException e) {
+        } catch (IndexOutOfBoundsException e) {
             System.out.println(e.toString());
             System.out.println("Exception was processed. Program continues");
         } finally {
@@ -67,7 +68,7 @@ public class University {
 
         try {
             task.checkingForSubjectsName();
-        } catch (ArrayStoreException e) {
+        } catch (NoSuchElementException e) {
             System.out.println(e.toString());
             System.out.println("Exception was processed. Program continues");
         } finally {
@@ -76,7 +77,7 @@ public class University {
 
         try {
             task.checkingStudentsInGroups();
-        } catch (ArrayStoreException e) {
+        } catch (NoSuchElementException e) {
             System.out.println(e.toString());
             System.out.println("Exception was processed. Program continues");
         } finally {
@@ -85,7 +86,7 @@ public class University {
 
         try {
             task.checkingGroupsInFaculty();
-        } catch (ArrayStoreException e) {
+        } catch (NoSuchElementException e) {
             System.out.println(e.toString());
             System.out.println("Exception was processed. Program continues");
         } finally {
@@ -94,7 +95,7 @@ public class University {
 
         try {
             task.checkingGroupsInUniversity();
-        } catch (SecurityException e) {
+        } catch (NoSuchElementException e) {
             System.out.println(e.toString());
             System.out.println("Exception was processed. Program continues");
         } finally {
@@ -106,15 +107,15 @@ public class University {
     void checkingMarks() {
         for (int i = 0; i < student.size(); i++) {
             if (student.get(i).getFirstSubjectMark() < 0 || student.get(i).getFirstSubjectMark() > 10) {
-                throw new ArrayStoreException("Exception: the mark should be in the range of 0 to 10! "
+                throw new IndexOutOfBoundsException("Exception: the mark should be in the range of 0 to 10! "
                         + student.get(i));
             }
             if (student.get(i).getSecondSubjectMark() < 0 || student.get(i).getSecondSubjectMark() > 10) {
-                throw new ArrayStoreException("Exception: the mark should be in the range of 0 to 10! "
+                throw new IndexOutOfBoundsException("Exception: the mark should be in the range of 0 to 10! "
                         + student.get(i));
             }
             if (student.get(i).getThirdSubjectMark() < 0 || student.get(i).getThirdSubjectMark() > 10) {
-                throw new ArrayStoreException("Exception: the mark should be in the range of 0 to 10! "
+                throw new IndexOutOfBoundsException("Exception: the mark should be in the range of 0 to 10! "
                         + student.get(i));
             }
         }
@@ -124,7 +125,7 @@ public class University {
         for (int i = 0; i < student.size(); i++) {
             if (student.get(i).getFirstSubjectName() == null && student.get(i).getSecondSubjectName() == null
                     && student.get(i).getThirdSubjectName() == null) {
-                throw new ArrayStoreException("Exception: missing subject name! "
+                throw new NoSuchElementException("Exception: missing subject name! "
                         + student.get(i));
             }
         }
@@ -133,7 +134,7 @@ public class University {
     void checkingStudentsInGroups() {
         for (int i = 0; i < group.size(); i++) {
             if (group.get(i).getNumberOfStudentsGroup() <= 0) {
-                throw new ArrayStoreException("Exception: missing number of students in group! "
+                throw new NoSuchElementException("Exception: missing number of students in group! "
                         + group.get(i));
             }
         }
@@ -142,7 +143,7 @@ public class University {
     void checkingGroupsInFaculty() {
         for (int i = 0; i < faculty.size(); i++) {
             if (faculty.get(i).getNumberOfGroups() <= 0) {
-                throw new ArrayStoreException("Exception: missing number of students in group! "
+                throw new NoSuchElementException("Exception: missing number of students in group! "
                         + faculty.get(i));
             }
         }
@@ -150,7 +151,7 @@ public class University {
 
     void checkingGroupsInUniversity() {
         if (faculty.isEmpty()) {
-            throw new SecurityException("Exception: missing faculty in university! ");
+            throw new NoSuchElementException("Exception: missing faculty in university! ");
         }
     }
 
